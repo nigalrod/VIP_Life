@@ -1,0 +1,61 @@
+
+                 <!-- START THE FEATURETTES -->
+
+          <div class="row-content" style="margin-left: 30px;margin-right: 30px;"> 
+<h3>Ready to request a reservation? Please <a href="ReservationRequest.html">click here</a> to begin your V.I.P. Lifestyle Destination  experience.</h3>
+<h3>Have a question before getting started? We'll be more than happy to assist you. Just complete the questionnaire below or email us at info@VIPLifestyleDestinations.com</h3>
+<h3>We can also reach us at one of our office message centers:<br>
+New York: (212) 498-RSVP (7787)<br>New Jersey: (973) 814-RSVP (7787)</h3></div>
+
+          <!-- /END THE FEATURETTES -->
+
+
+<form method="post" action="info.php" onsubmit="return validate_form(this)">
+<div style="margin-left: 30px;">
+    <p align="left">Salutation:<br />
+    <select name="salutation">
+      <option selected="selected"></option>
+      <option value="Mr.">Mr.</option>
+      <option value="Ms.">Ms.</option>
+      <option value="Dr.">Mrs.</option>
+      <option value="Dr.">Dr.</option>
+    </select><br>
+
+    <br>*First Name: <br> <!--required-->
+    <input size="19" type="text" name="firstName" required><br>  
+
+    <br>*Last Name: <br><!--required-->
+    <input size="19" type="text" name="lastName" required><br>
+
+
+    <br>*Email:<br><!--required-->
+    <input type="text" name="email" style="width: 394px" required><br>
+
+    <br>*Contact Number:<br><!--required-->
+    <input type="text" name="contactNumber">&nbsp;&nbsp;Contact number type:&nbsp; 
+        
+    <select name="contactType">
+      <option selected="selected"></option>
+      <option value="Home">Home</option>
+      <option value="Work">Work</option>
+      <option value="Mobile">Mobile</option></select><br>
+
+    <br>How did you hear about us?<br>
+    <select name="hearAboutUs">
+    <option selected="selected"></option>
+    <option value="I am a Repeat V.I.P. Client">I am a Repeat V.I.P. Client</option>
+    <option value="Family/Friend">Family/Friend</option>
+    <option value="Travel Consultant">Travel Consultant</option>
+    <option value="Radio/TV">Radio/TV</option>
+    <option value="Newpaper/Magazine">Newpaper/Magazine</option>
+    <option value="Internet Search">Internet Search</option>
+    <option value="Promotional Offer">Promotional Offer</option>
+    <option value="Other">Other</option></select><br>
+
+    <br>Questions/Comments:
+    <br>&nbsp;<textarea style="width: 414px" rows="9" cols="20" name="comments" required></textarea required> <br><br>
+
+    <input value="submit" type="submit" name="submit">
+    </div>
+
+</form>

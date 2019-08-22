@@ -1,0 +1,30 @@
+<script type="text/javascript" src="login.js"></script>
+</head>
+
+<!-- For now going to comment out the lookup script.
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13006264-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+-->
+
+<div class="containter">
+<div class="row-content" align=center>
+    <h1>V.I.P. Reservation Lookup</h1>
+</div>
+<div style="margin-left: 30px; margin-right: 30px">
+<h3>Please enter the information below to access your reservation.</h3> 
+
+
+<form method="get" name="loginForm" action="javascript:LoginFunc()">
+    <p class="MsoNormal">Username/email: <br /><input id="userName" type="text"></p>
+    <p class="MsoNormal">Reservation/Document Number: <br/><input id="password" type="password" onKeyPress="return submitenter(this,event)"></p>
+    <p class="MsoNormal"><input value="View Reservation" type="submit"></p>
+</form>
+</div>
+</div>

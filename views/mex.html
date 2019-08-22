@@ -1,0 +1,46 @@
+<!-- Second Nav bar -->
+  <div id="destNav" class="navbar navbar-default navbar-fixed-top fixed-element" data-offset-top="80" data-spy="affix">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse main-nav">
+        <ul id="destList" class="nav navbar-nav">
+          <li ng-class="{active: activetab=='/domRep'}"><a href="#domRep">Dominican Republic</a></li>
+          <li class="divider-vertical"></li>
+          <li ng-class="{active: activetab=='/mex'}"><a href="#mex">Mexico</a></li>
+          <li class="divider-vertical"></li>
+          <li ng-class="{active: activetab=='/jamaica'}"><a href="#jamaica">Jamaica</a></li>
+          <li class="divider-vertical"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- Start Coding Mexico here-->
+<ul id= "destTabs" class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" data-target="#cancun"><span></span>Cancun</a></li>
+    <li><a data-target="#tulum" data-toggle="tab"><span></span>Puerto Plata</a></li>
+</ul>  
+
+<div class="tab-content">
+    
+<!-- This is Cancun Tab -->
+    <div class="tab-pane fade in active" id="cancun">
+        <div class="row header" style="margin-top: 20px">
+            <div data-include="bocaChica"></div>
+        </div>
+    </div>
+    
+<!-- This is Tulum Tab -->  
+    <div class="tab-pane fade" id="tulum">
+        <div class="row header" style="margin-top: 20px">
+
+        </div>
+    </div>
+    
+</div>
